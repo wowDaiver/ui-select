@@ -594,7 +594,7 @@ uis.controller('uiSelectCtrl',
         }
         break;
       case KEY.TAB:
-        if (!ctrl.multiple || ctrl.open) ctrl.select(ctrl.items[ctrl.activeIndex], true);
+        if (!ctrl.multiple || ctrl.open) ctrl.select(ctrl.items[ctrl.activeIndex], ctrl.skipFocusser);
         break;
       case KEY.ENTER:
         if(ctrl.open && (ctrl.tagging.isActivated || ctrl.activeIndex >= 0)){
